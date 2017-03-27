@@ -1,15 +1,17 @@
 package model;
 
-public class Employee {
+public abstract class Employee implements Comparable<Employee>{
+
+    public String getName() {
+        return name;
+    }
 
     public Employee(String name) {
         this.name = name;
     }
 
-    private String name = "";
-    protected double salary;
-    private boolean married;
 
+    private String name = "";
 
     public double getSalary() {
         return salary;
@@ -19,6 +21,8 @@ public class Employee {
         this.salary = salary;
     }
 
+    protected double salary = 100000;
+    private boolean married;
 
     public boolean isMarried() {
         return married;
@@ -29,7 +33,7 @@ public class Employee {
     }
 
     private void increaseSalary(double increase) {
-        //salary = salary + increase;
+//        salary = salary + increase;
         salary += increase;
     }
 
@@ -50,4 +54,9 @@ public class Employee {
     protected String print() {
         return "Name: " + this.name + " and salary: " + this.getSalary();
     }
+
+    protected abstract void something();
+
+    protected abstract String signDocument();
+
 }
