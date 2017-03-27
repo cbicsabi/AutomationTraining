@@ -3,7 +3,7 @@ package model;
 import org.iban4j.CountryCode;
 import org.iban4j.Iban;
 
-public class Account {
+public class Account implements Printable{
 
     private double balance;
     private String description;
