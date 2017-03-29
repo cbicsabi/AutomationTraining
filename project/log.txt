@@ -1,0 +1,1 @@
+2017-03-29 10:47:05,263 DEBUG   [main] generics.Main  - String box content:my string
