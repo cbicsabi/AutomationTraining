@@ -1,5 +1,0 @@
-#Remove intelliJ not wanted stuff
-#target/
-#*.iml
-#*.idea/
-#.~

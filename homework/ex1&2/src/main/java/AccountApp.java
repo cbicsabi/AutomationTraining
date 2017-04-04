@@ -12,7 +12,7 @@ import java.util.List;
 public class AccountApp {
     public static void main(String[] args) {
 
-        CurrentAccount curacc = new CurrentAccount("This is Mr. Bond's account",12345, true);
+        CurrentAccount curacc = new CurrentAccount("JB's Personal Account",12345, true);
 
         SavingsAccount savacc = new SavingsAccount("Savings account for Mary", 1000, 0.1);
 
@@ -28,10 +28,10 @@ public class AccountApp {
         //lista.add(savacc2);
 
         jamesbond.addAccount(curacc);
-
         jamesbond.addAccount(savacc);
-
         jamesbond.addAccount(savacc2);
+
+        System.out.println("Name: " + jamesbond.getName() + "\n");
 
         for (Account e : jamesbond.getAccountList()){
             e.print();
