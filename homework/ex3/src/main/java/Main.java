@@ -8,7 +8,7 @@ public class Main {
         Contact Mirel = new Contact("Ghz", "Mirel", "demo","0725-025-263");
         Contact Mirel2 = new Contact("Gheorghitza", "Mirel", "str Palat, United Bussines Center 1, 3E, Iasi","0736-025-234");
         Contact Mirel3 = new Contact("Gheorghitza", "Mirutz", "str Palat, United Bussines Center 12, 3E, Iasi","0737-025-235");
-        
+
 
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.addContact(Mirel);
